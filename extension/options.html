@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <title>Pippo — налаштування</title>
+  <style>
+    body { font: 14px system-ui, sans-serif; padding: 16px; min-width: 360px; }
+    input { width: 100%; box-sizing: border-box; padding: 6px 8px; margin: 6px 0 10px; }
+    .muted { color: #777; }
+  </style>
+</head>
+<body>
+  <label>Адреса Pippo
+    <input id="url" placeholder="http://localhost:3700">
+  </label>
+  <button id="save">Зберегти</button> <span id="status" class="muted"></span>
+  <p class="muted">Гарячу клавішу можна змінити на сторінці chrome://extensions/shortcuts.</p>
+  <script src="options.js"></script>
+</body>
+</html>

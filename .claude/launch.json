@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "pippo-test",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["--env-file-if-exists=.env", "--no-warnings=ExperimentalWarning", "server.js"],
+      "env": { "PORT": "3701", "PIPPO_DB": ":memory:" },
+      "port": 3701
+    }
+  ]
+}

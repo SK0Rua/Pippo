@@ -1,0 +1,306 @@
+{
+ "id": "airport",
+ "generatedAt": "2026-09-17T15:54:54.914Z",
+ "words": [
+  {
+   "term": "passport",
+   "translation": "паспорт",
+   "transcription": "/ˈpɑːspɔːt/",
+   "example": "Please show your passport and boarding pass to the officer at the gate."
+  },
+  {
+   "term": "ticket",
+   "translation": "квиток",
+   "transcription": "/ˈtɪkɪt/",
+   "example": "I bought my plane ticket online two months before the trip."
+  },
+  {
+   "term": "luggage",
+   "translation": "багаж",
+   "transcription": "/ˈlʌɡɪdʒ/",
+   "example": "You must keep your luggage with you at all times in the airport."
+  },
+  {
+   "term": "boarding pass",
+   "translation": "посадковий талон",
+   "transcription": "/ˈbɔːdɪŋ pɑːs/",
+   "example": "You can print your boarding pass at home or get it at the desk."
+  },
+  {
+   "term": "flight",
+   "translation": "рейс, політ",
+   "transcription": "/flaɪt/",
+   "example": "Our flight to London is scheduled to leave at nine o'clock tomorrow morning."
+  },
+  {
+   "term": "gate",
+   "translation": "вихід на посадку",
+   "transcription": "/ɡeɪt/",
+   "example": "Passengers for the flight to Paris should go to gate fifteen now."
+  },
+  {
+   "term": "to check in",
+   "translation": "реєструватися",
+   "transcription": "/tʃek ɪn/",
+   "example": "We need to check in at least two hours before our international flight."
+  },
+  {
+   "term": "suitcase",
+   "translation": "валіза",
+   "transcription": "/ˈsuːtkeɪs/",
+   "example": "Her heavy suitcase was difficult to lift off the baggage carousel."
+  },
+  {
+   "term": "security",
+   "translation": "безпека, служба безпеки",
+   "transcription": "/sɪˈkjʊərəti/",
+   "example": "You must take off your coat when you go through airport security."
+  },
+  {
+   "term": "customs",
+   "translation": "митниця",
+   "transcription": "/ˈkʌstəmz/",
+   "example": "After landing, we had to go through customs to show our bags."
+  },
+  {
+   "term": "to board",
+   "translation": "сідати на борт, сідати в літак",
+   "transcription": "/bɔːd/",
+   "example": "We are ready to board the plane, so please line up here."
+  },
+  {
+   "term": "passenger",
+   "translation": "пасажир",
+   "transcription": "/ˈpæsɪndʒə/",
+   "example": "Every passenger on this plane must wear a seat belt during takeoff."
+  },
+  {
+   "term": "pilot",
+   "translation": "пілот",
+   "transcription": "/ˈpaɪlət/",
+   "example": "The pilot welcomed us on board and wished us a pleasant flight."
+  },
+  {
+   "term": "flight attendant",
+   "translation": "бортпровідник, стюардеса",
+   "transcription": "/ˈflaɪt əˌtendənt/",
+   "example": "The flight attendant showed us how to use the oxygen masks."
+  },
+  {
+   "term": "departure",
+   "translation": "відправлення, виліт",
+   "transcription": "/dɪˈpɑːtʃə/",
+   "example": "Please check the departure board to see if your flight is on time."
+  },
+  {
+   "term": "arrival",
+   "translation": "прибуття",
+   "transcription": "/əˈraɪvl/",
+   "example": "Our arrival in New York was delayed by two hours because of snow."
+  },
+  {
+   "term": "to land",
+   "translation": "приземлятися",
+   "transcription": "/lænd/",
+   "example": "The plane will land at the airport in about fifteen minutes."
+  },
+  {
+   "term": "to take off",
+   "translation": "злітати",
+   "transcription": "/teɪk ɒf/",
+   "example": "The airplane is waiting on the runway and is ready to take off."
+  },
+  {
+   "term": "delay",
+   "translation": "затримка",
+   "transcription": "/dɪˈleɪ/",
+   "example": "There is a long delay because of the heavy rain and strong wind."
+  },
+  {
+   "term": "hand luggage",
+   "translation": "ручна поклажа",
+   "transcription": "/hænd ˈlʌɡɪdʒ/",
+   "example": "You can only take one small piece of hand luggage into the cabin."
+  },
+  {
+   "term": "seat belt",
+   "translation": "пасок безпеки, ремінь безпеки",
+   "transcription": "/ˈsiːt belt/",
+   "example": "Please keep your seat belt fastened while the pilot is flying the plane."
+  },
+  {
+   "term": "window seat",
+   "translation": "місце біля вікна",
+   "transcription": "/ˈwɪndəʊ siːt/",
+   "example": "I always choose a window seat so I can look at the clouds."
+  },
+  {
+   "term": "aisle seat",
+   "translation": "місце біля проходу",
+   "transcription": "/ˈaɪl siːt/",
+   "example": "He prefers an aisle seat because it is easier to stand up."
+  },
+  {
+   "term": "scale",
+   "translation": "ваги",
+   "transcription": "/skeɪl/",
+   "example": "Please put your big bag on the scale to check its weight."
+  },
+  {
+   "term": "terminal",
+   "translation": "термінал",
+   "transcription": "/ˈtɜːmɪnl/",
+   "example": "Our flight leaves from terminal two, which is on the other side."
+  },
+  {
+   "term": "to pack",
+   "translation": "пакувати, збирати речі",
+   "transcription": "/pæk/",
+   "example": "I need to pack my suitcase tonight because we leave early tomorrow."
+  },
+  {
+   "term": "announcement",
+   "translation": "оголошення",
+   "transcription": "/əˈnaʊnsmənt/",
+   "example": "We listened to the announcement about the change of our boarding gate."
+  },
+  {
+   "term": "metal detector",
+   "translation": "металошукач",
+   "transcription": "/ˈmetl dɪˈtektə/",
+   "example": "You must walk through the metal detector before you enter the gate."
+  },
+  {
+   "term": "boarding time",
+   "translation": "час посадки",
+   "transcription": "/ˈbɔːdɪŋ taɪm/",
+   "example": "The boarding time is printed on your pass, so do not be late."
+  },
+  {
+   "term": "direct flight",
+   "translation": "прямий рейс",
+   "transcription": "/daɪˈrekt flaɪt/",
+   "example": "We booked a direct flight because we did not want to change planes."
+  },
+  {
+   "term": "trolley",
+   "translation": "візок",
+   "transcription": "/ˈtrɒli/",
+   "example": "You can use a luggage trolley to carry your heavy bags to the car."
+  },
+  {
+   "term": "visa",
+   "translation": "віза",
+   "transcription": "/ˈviːzə/",
+   "example": "You need to get a tourist visa before you travel to this country."
+  },
+  {
+   "term": "to declare",
+   "translation": "декларувати",
+   "transcription": "/dɪˈkleə/",
+   "example": "Do you have any expensive items or food to declare at customs?"
+  },
+  {
+   "term": "to book",
+   "translation": "бронювати, замовляти",
+   "transcription": "/bʊk/",
+   "example": "You should book your flight ticket online before you travel to London."
+  },
+  {
+   "term": "baggage claim",
+   "translation": "отримання багажу, видача багажу",
+   "transcription": "/ˈbæɡ.ɪdʒ kleɪm/",
+   "example": "We went to the baggage claim to collect our heavy bags."
+  },
+  {
+   "term": "destination",
+   "translation": "пункт призначення, напрямок",
+   "transcription": "/ˌdes.tɪˈneɪ.ʃən/",
+   "example": "Paris is a very popular destination for tourists from all over the world."
+  },
+  {
+   "term": "overweight",
+   "translation": "заважкий, з надмірною вагою",
+   "transcription": "/ˌəʊ.vəˈweɪt/",
+   "example": "If your bag is overweight, you will have to pay extra money."
+  },
+  {
+   "term": "to miss",
+   "translation": "запізнитися, пропустити",
+   "transcription": "/mɪs/",
+   "example": "We must hurry to the airport because we do not want to miss our plane."
+  },
+  {
+   "term": "cabin",
+   "translation": "салон, кабіна",
+   "transcription": "/ˈkæb.ɪn/",
+   "example": "The cabin of the airplane was very clean and comfortable."
+  },
+  {
+   "term": "to weigh",
+   "translation": "зважувати",
+   "transcription": "/weɪ/",
+   "example": "The airport worker will weigh your bags before you get on the plane."
+  },
+  {
+   "term": "liquids",
+   "translation": "рідини",
+   "transcription": "/ˈlɪk.wɪdz/",
+   "example": "You cannot bring large bottles of liquids onto the airplane."
+  },
+  {
+   "term": "duty-free",
+   "translation": "безмитний",
+   "transcription": "/ˌdʒuː.tiˈfriː/",
+   "example": "I bought some cheap chocolate and perfume at the duty-free shop."
+  },
+  {
+   "term": "layover",
+   "translation": "пересадка, зупинка",
+   "transcription": "/ˈleɪ.əʊ.və/",
+   "example": "We had a long layover in Munich before traveling to New York."
+  },
+  {
+   "term": "information desk",
+   "translation": "довідкове бюро, інформаційна стійка",
+   "transcription": "/ˌɪn.fəˈmeɪ.ʃən desk/",
+   "example": "If you are lost, you can ask for help at the information desk."
+  },
+  {
+   "term": "crew",
+   "translation": "екіпаж, команда",
+   "transcription": "/kruː/",
+   "example": "The cabin crew will help you find your seat on the plane."
+  },
+  {
+   "term": "row",
+   "translation": "ряд",
+   "transcription": "/rəʊ/",
+   "example": "My seat is in the fifth row, near the front of the plane."
+  },
+  {
+   "term": "overhead locker",
+   "translation": "навісна шафка, верхня полиця для багажу",
+   "transcription": "/ˌəʊ.və.hed ˈlɒk.ə/",
+   "example": "Please put your small bags in the overhead locker above your seat."
+  },
+  {
+   "term": "airline",
+   "translation": "авіакомпанія",
+   "transcription": "/ˈeə.laɪn/",
+   "example": "Which airline are you flying with for your summer holiday this year?"
+  },
+  {
+   "term": "to confirm",
+   "translation": "підтвердити",
+   "transcription": "/kənˈfɜːm/",
+   "example": "You should confirm your travel plans at least one day before you leave."
+  },
+  {
+   "term": "screen",
+   "translation": "екран, табло",
+   "transcription": "/skriːn/",
+   "example": "Look at the big screen to see when your plane is leaving."
+  }
+ ]
+}

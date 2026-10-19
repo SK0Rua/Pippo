@@ -1,0 +1,126 @@
+{
+ "id": "hotel",
+ "generatedAt": "2026-09-17T15:52:16.512Z",
+ "words": [
+  {
+   "term": "to book",
+   "translation": "бронювати, замовляти",
+   "transcription": "/bʊk/",
+   "example": "I would like to book a double room for three nights next week."
+  },
+  {
+   "term": "reservation",
+   "translation": "бронювання, резервування",
+   "transcription": "/ˌrezəˈveɪʃn/",
+   "example": "We have a reservation under the name of Smith for tonight."
+  },
+  {
+   "term": "single room",
+   "translation": "одномісний номер",
+   "transcription": "/ˈsɪŋɡl ruːm/",
+   "example": "Since I am travelling alone, I only need a small single room."
+  },
+  {
+   "term": "double room",
+   "translation": "двомісний номер",
+   "transcription": "/ˈdʌbl ruːm/",
+   "example": "My husband and I stayed in a comfortable double room with a balcony."
+  },
+  {
+   "term": "twin room",
+   "translation": "номер з двома ліжками",
+   "transcription": "/twɪn ruːm/",
+   "example": "My friend and I booked a twin room so we could sleep separately."
+  },
+  {
+   "term": "to check in",
+   "translation": "реєструватися, заселятися",
+   "transcription": "/tʃek ɪn/",
+   "example": "Guests can check in at the reception desk starting from two o'clock."
+  },
+  {
+   "term": "to check out",
+   "translation": "виселятися, виїжджати",
+   "transcription": "/tʃek aʊt/",
+   "example": "We need to check out of the hotel before eleven in the morning."
+  },
+  {
+   "term": "reception",
+   "translation": "рецепція, стійка реєстрації",
+   "transcription": "/rɪˈsepʃn/",
+   "example": "Please leave your key card at the reception when you leave the hotel."
+  },
+  {
+   "term": "receptionist",
+   "translation": "адміністратор, портьє",
+   "transcription": "/rɪˈsepʃənɪst/",
+   "example": "The friendly receptionist helped us carry our heavy bags to the elevator."
+  },
+  {
+   "term": "key card",
+   "translation": "ключ-карта, електронний ключ",
+   "transcription": "/ˈkiː kɑːd/",
+   "example": "Hold your key card against the reader to open your hotel room door."
+  },
+  {
+   "term": "luggage",
+   "translation": "багаж, валізи",
+   "transcription": "/ˈlʌɡɪdʒ/",
+   "example": "The hotel staff can store your luggage after you check out."
+  },
+  {
+   "term": "lobby",
+   "translation": "вестибюль, хол",
+   "transcription": "/ˈlɒbi/",
+   "example": "Let us meet in the hotel lobby at six o'clock before dinner."
+  },
+  {
+   "term": "room service",
+   "translation": "обслуговування номерів",
+   "transcription": "/ruːm ˈsɜːvɪs/",
+   "example": "We ordered delicious pizza and drinks through room service last night."
+  },
+  {
+   "term": "air conditioning",
+   "translation": "кондиціонер, кондиціювання",
+   "transcription": "/ˈeə kənˌdɪʃənɪŋ/",
+   "example": "The air conditioning in our room kept us cool during the hot summer."
+  },
+  {
+   "term": "towel",
+   "translation": "рушник",
+   "transcription": "/ˈtaʊəl/",
+   "example": "Could you please bring two clean towels to room number three hundred?"
+  },
+  {
+   "term": "to complain",
+   "translation": "скаржитися",
+   "transcription": "/kəmˈpleɪn/",
+   "example": "I had to complain to the manager because our room was very dirty."
+  },
+  {
+   "term": "complaint",
+   "translation": "скарга",
+   "transcription": "/kəmˈpleɪnt/",
+   "example": "The hotel manager quickly resolved our complaint about the noisy neighbours."
+  },
+  {
+   "term": "bill",
+   "translation": "рахунок",
+   "transcription": "/bɪl/",
+   "example": "Please check the bill carefully before you pay for your stay."
+  },
+  {
+   "term": "to include",
+   "translation": "включати, містити",
+   "transcription": "/ɪnˈkluːd/",
+   "example": "Does the price of the room include access to the swimming pool?"
+  },
+  {
+   "term": "breakfast",
+   "translation": "сніданок",
+   "transcription": "/ˈbrekfəst/",
+   "example": "A delicious buffet breakfast is served in the dining room every morning."
+  }
+ ]
+}

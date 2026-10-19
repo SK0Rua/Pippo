@@ -1,0 +1,306 @@
+{
+ "id": "restaurant",
+ "generatedAt": "2026-09-17T15:54:30.984Z",
+ "words": [
+  {
+   "term": "menu",
+   "translation": "меню",
+   "transcription": "/ˈmen.juː/",
+   "example": "Please look at the menu and choose what you want to eat."
+  },
+  {
+   "term": "waiter",
+   "translation": "офіціант",
+   "transcription": "/ˈweɪ.tər/",
+   "example": "The waiter brought us some cold water before we ordered our food."
+  },
+  {
+   "term": "waitress",
+   "translation": "офіціантка",
+   "transcription": "/ˈweɪ.trəs/",
+   "example": "Our waitress was very friendly and helped us choose the best dessert."
+  },
+  {
+   "term": "bill",
+   "translation": "рахунок",
+   "transcription": "/bɪl/",
+   "example": "Excuse me, could we have the bill now, please?"
+  },
+  {
+   "term": "tip",
+   "translation": "чайові",
+   "transcription": "/tɪp/",
+   "example": "We left a generous tip because the service was absolutely excellent."
+  },
+  {
+   "term": "to order",
+   "translation": "замовляти",
+   "transcription": "/ˈɔː.dər/",
+   "example": "Are you ready to order your main course now, sir?"
+  },
+  {
+   "term": "starter",
+   "translation": "закуска",
+   "transcription": "/ˈstɑː.tər/",
+   "example": "I would like to have a hot soup as a starter."
+  },
+  {
+   "term": "main course",
+   "translation": "головна страва, основна страва",
+   "transcription": "/ˌmeɪn ˈkɔːs/",
+   "example": "For my main course, I will have the grilled chicken with vegetables."
+  },
+  {
+   "term": "dessert",
+   "translation": "десерт",
+   "transcription": "/dɪˈzɜːt/",
+   "example": "Would you like to see the dessert menu for some sweet cakes?"
+  },
+  {
+   "term": "drink",
+   "translation": "напій",
+   "transcription": "/drɪŋk/",
+   "example": "Can I get you a cold drink while you look at the menu?"
+  },
+  {
+   "term": "table",
+   "translation": "столик, стіл",
+   "transcription": "/ˈteɪ.bəl/",
+   "example": "We need a table for four people near the window, please."
+  },
+  {
+   "term": "to book",
+   "translation": "бронювати, резервувати",
+   "transcription": "/bʊk/",
+   "example": "You should book a table in advance because this restaurant is very popular."
+  },
+  {
+   "term": "reservation",
+   "translation": "бронювання, резерв",
+   "transcription": "/ˌrez.əˈveɪ.ʃən/",
+   "example": "I have a reservation for two people under the name of Smith."
+  },
+  {
+   "term": "chef",
+   "translation": "шеф-кухар, кухар",
+   "transcription": "/ʃef/",
+   "example": "The chef prepared a special pasta dish for our dinner tonight."
+  },
+  {
+   "term": "customer",
+   "translation": "клієнт, відвідувач",
+   "transcription": "/ˈkʌs.tə.mər/",
+   "example": "The restaurant was full of happy customers enjoying their delicious meals."
+  },
+  {
+   "term": "to pay",
+   "translation": "платити, оплачувати",
+   "transcription": "/peɪ/",
+   "example": "We can pay for our lunch with cash or by card."
+  },
+  {
+   "term": "cash",
+   "translation": "готівка",
+   "transcription": "/kæʃ/",
+   "example": "I do not have any cash, so I must pay by card."
+  },
+  {
+   "term": "credit card",
+   "translation": "кредитна картка",
+   "transcription": "/ˈkred.ɪt ˌkɑːd/",
+   "example": "Do you accept this credit card for paying the bill?"
+  },
+  {
+   "term": "receipt",
+   "translation": "чек, квитанція",
+   "transcription": "/rɪˈsiːt/",
+   "example": "The waiter gave me a receipt after I paid for the dinner."
+  },
+  {
+   "term": "napkin",
+   "translation": "серветка",
+   "transcription": "/ˈnæp.kɪn/",
+   "example": "Please use this paper napkin to clean your hands and mouth."
+  },
+  {
+   "term": "glass",
+   "translation": "склянка, келих",
+   "transcription": "/ɡlɑːs/",
+   "example": "Could you please bring me a clean glass for my orange juice?"
+  },
+  {
+   "term": "plate",
+   "translation": "тарілка",
+   "transcription": "/pleɪt/",
+   "example": "The waiter put a large plate of hot food on our table."
+  },
+  {
+   "term": "fork",
+   "translation": "виделка",
+   "transcription": "/fɔːk/",
+   "example": "I need a fork and a knife to eat this steak."
+  },
+  {
+   "term": "knife",
+   "translation": "ніж",
+   "transcription": "/naɪf/",
+   "example": "This knife is not sharp enough to cut the meat easily."
+  },
+  {
+   "term": "spoon",
+   "translation": "ложка",
+   "transcription": "/spuːn/",
+   "example": "He used a small spoon to eat his delicious chocolate ice cream."
+  },
+  {
+   "term": "delicious",
+   "translation": "смачний, апетитний",
+   "transcription": "/dɪˈlɪʃ.əs/",
+   "example": "The chicken soup we had for lunch was absolutely delicious."
+  },
+  {
+   "term": "spicy",
+   "translation": "гострий, пікантний",
+   "transcription": "/ˈspaɪ.si/",
+   "example": "I do not like spicy food because it hurts my stomach."
+  },
+  {
+   "term": "sweet",
+   "translation": "солодкий",
+   "transcription": "/swiːt/",
+   "example": "This chocolate cake is very sweet and tastes wonderful with coffee."
+  },
+  {
+   "term": "vegetarian",
+   "translation": "вегетаріанський",
+   "transcription": "/ˌvedʒ.ɪˈteə.ri.ən/",
+   "example": "Are there any vegetarian options on your menu tonight?"
+  },
+  {
+   "term": "to recommend",
+   "translation": "рекомендувати, радити",
+   "transcription": "/ˌrek.əˈmend/",
+   "example": "Which local dish do you recommend for a first-time visitor?"
+  },
+  {
+   "term": "still water",
+   "translation": "негазована вода",
+   "transcription": "/stɪl ˈwɔː.tər/",
+   "example": "I prefer still water because sparkling water has too many bubbles."
+  },
+  {
+   "term": "sparkling water",
+   "translation": "газована вода",
+   "transcription": "/ˈspɑː.klɪŋ ˌwɔː.tər/",
+   "example": "Would you like still or sparkling water with your meal?"
+  },
+  {
+   "term": "service charge",
+   "translation": "плата за обслуговування",
+   "transcription": "/ˈsɜː.vɪs tʃɑːdʒ/",
+   "example": "The service charge is already included in our final bill."
+  },
+  {
+   "term": "dish",
+   "translation": "страва",
+   "transcription": "/dɪʃ/",
+   "example": "This Italian restaurant serves a traditional pasta dish with fresh tomatoes."
+  },
+  {
+   "term": "to serve",
+   "translation": "обслуговувати, подавати",
+   "transcription": "/sɜːv/",
+   "example": "The polite staff will serve your hot soup in a few minutes."
+  },
+  {
+   "term": "side dish",
+   "translation": "гарнір",
+   "transcription": "/ˈsaɪd dɪʃ/",
+   "example": "I would like to have a green salad as a side dish."
+  },
+  {
+   "term": "to split",
+   "translation": "розділити, поділити",
+   "transcription": "/splɪt/",
+   "example": "We usually split the cost of our meals when we eat out."
+  },
+  {
+   "term": "change",
+   "translation": "решта",
+   "transcription": "/tʃeɪndʒ/",
+   "example": "The server gave me my change after I bought the coffee."
+  },
+  {
+   "term": "staff",
+   "translation": "персонал, працівники",
+   "transcription": "/stɑːf/",
+   "example": "The friendly staff welcomed us as soon as we entered the cafe."
+  },
+  {
+   "term": "seat",
+   "translation": "місце, сидіння",
+   "transcription": "/siːt/",
+   "example": "Please take a seat near the window while we prepare your food."
+  },
+  {
+   "term": "cutlery",
+   "translation": "столові прилади",
+   "transcription": "/ˈkʌt.lər.i/",
+   "example": "The server brought clean cutlery before serving our main meal."
+  },
+  {
+   "term": "mug",
+   "translation": "кухоль, чашка",
+   "transcription": "/mʌɡ/",
+   "example": "She got a large mug of hot chocolate with marshmallows."
+  },
+  {
+   "term": "salty",
+   "translation": "солоний",
+   "transcription": "/ˈsɒl.ti/",
+   "example": "These potato chips are too salty for me to eat."
+  },
+  {
+   "term": "sour",
+   "translation": "кислий",
+   "transcription": "/saʊər/",
+   "example": "The fresh lemonade was very sour, so I added some sugar."
+  },
+  {
+   "term": "allergy",
+   "translation": "алергія",
+   "transcription": "/ˈæl.ə.dʒi/",
+   "example": "Please tell us if you have a food allergy before we cook."
+  },
+  {
+   "term": "to prefer",
+   "translation": "віддавати перевагу, воліти",
+   "transcription": "/prɪˈfɜːr/",
+   "example": "Do you prefer to sit inside or outside on the terrace?"
+  },
+  {
+   "term": "tap water",
+   "translation": "вода з-під крана",
+   "transcription": "/ˈtæp ˌwɔː.tər/",
+   "example": "In this cafe, you can get a free bottle of tap water."
+  },
+  {
+   "term": "soda",
+   "translation": "газована вода, газований напій",
+   "transcription": "/ˈsəʊ.də/",
+   "example": "We bought some cold soda to go with our hot pizza."
+  },
+  {
+   "term": "takeaway",
+   "translation": "їжа навиніс, їжа з собою",
+   "transcription": "/ˈteɪk.ə.weɪ/",
+   "example": "We bought some Chinese takeaway because we did not want to cook."
+  },
+  {
+   "term": "total",
+   "translation": "загальна сума, підсумок",
+   "transcription": "/ˈtəʊ.təl/",
+   "example": "The total was twenty pounds, so we each gave ten pounds."
+  }
+ ]
+}

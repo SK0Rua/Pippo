@@ -1,0 +1,21 @@
+node_modules/
+data/
+.env
+.env.*
+!.env.example
+packs/.*.cache.json
+
+# Source material (copyrighted, used only to generate packs)
+*.pdf
+
+# Local Claude settings
+.claude/settings.local.json
+
+# OS / editor / logs
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.log
+npm-debug.log*

@@ -1,0 +1,18 @@
+{
+  "name": "pippo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Pippo — особистий словник із тренуваннями та інтервальним повторенням",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env --no-warnings=ExperimentalWarning server.js",
+    "dev": "node --env-file-if-exists=.env --no-warnings=ExperimentalWarning --watch server.js",
+    "test": "node --env-file-if-exists=.env --no-warnings=ExperimentalWarning scripts/test-api.js"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
