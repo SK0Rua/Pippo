@@ -856,6 +856,7 @@ app.get('/api/shop', auth, (req, res) => {
     const q = packs.quote(p, ctx);
     return {
       id: p.id, type: p.type, level: p.level, size: p.size, title: p.title, description: p.description, count: p.count,
+      ...(p.series ? { series: p.series, seriesTitle: p.seriesTitle, season: p.season, episode: p.episode, episodeTitle: p.episodeTitle, label: p.label } : {}),
       basePrice: p.basePrice, price: q.price, knownCount: q.knownCount, isDeal: q.isDeal, free: q.free,
       owned: ownedInfo(req.user.id, p.id),
       preview: p.words.slice(0, 5).map(({ term, translation, transcription, example }) => ({ term, translation, transcription, example })),

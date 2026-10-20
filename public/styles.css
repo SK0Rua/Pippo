@@ -553,6 +553,14 @@ textarea.example-input { min-height: 0; font-family: inherit; font-size: 15px; }
 .price b { font-size: 20px; font-weight: 900; white-space: nowrap; }
 .price .free { color: var(--good); font-size: 17px; }
 .pack-owned { display: grid; gap: 2px; }
+.series-card { grid-template-rows: auto auto auto 1fr; }
+.series-cover { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 14px; display: block; background: var(--surface-2); }
+.series-head { grid-column: 1 / -1; display: grid; grid-template-columns: 180px 1fr; gap: 20px; align-items: center; padding: 18px; }
+.series-cover-lg { aspect-ratio: 1; }
+.series-head-body { display: grid; gap: 8px; justify-items: start; }
+.series-head-body h2 { margin: 0; }
+.series-season { grid-column: 1 / -1; margin: 10px 0 0; }
+@media (max-width: 640px) { .series-head { grid-template-columns: 1fr; } .series-cover-lg { max-width: 200px; } }
 
 .pack-hero { display: flex; gap: 18px; align-items: center; }
 .preview { display: grid; gap: 8px; }

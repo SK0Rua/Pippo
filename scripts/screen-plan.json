@@ -1,0 +1,32 @@
+[
+ {
+  "id": "alf-s01e01",
+  "type": "screen",
+  "series": "alf",
+  "seriesTitle": "Альф",
+  "season": 1,
+  "episode": 1,
+  "episodeTitle": "",
+  "label": "1·01",
+  "level": "B2",
+  "size": 30,
+  "title": "Альф · 1×01",
+  "description": "Космічний корабель прибульця Альфа врізається в гараж родини Таннерів, які вирішують прихистити його у своєму домі.",
+  "focus": "vocabulary from the TV series \"Альф\""
+ },
+ {
+  "id": "alf-s01e02",
+  "type": "screen",
+  "series": "alf",
+  "seriesTitle": "Альф",
+  "season": 1,
+  "episode": 2,
+  "episodeTitle": "",
+  "label": "1·02",
+  "level": "B2",
+  "size": 30,
+  "title": "Альф · 1×02",
+  "description": "Віллі та Кейт залишають сусідку Ракель Очмонек сидіти з Браяном, поки самі відлучаються, а замкнений у спальні Альф стає причиною чуток про привидів і власноруч зупиняє грабіжника.",
+  "focus": "vocabulary from the TV series \"Альф\""
+ }
+]

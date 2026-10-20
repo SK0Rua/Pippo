@@ -15,6 +15,7 @@ const PALETTE = {
   language: ['#FF94BE', '#EC5A92', '#A92A5C'],
   level: ['#7EDDA6', '#2FB36C', '#1B7445'],
   course: ['#8FC6FF', '#3A86E0', '#164C8C'],
+  screen: ['#FF8A8A', '#E04848', '#9C1F2A'],
 };
 const W = '#FFFFFF';
 const A = '#FFD24D'; // акцент
@@ -78,6 +79,13 @@ const bookGlyph = (label) => (D) =>
   + `<circle cx="46" cy="46" r="13" fill="${A}" stroke="${D}" stroke-width="2"/>`
   + `<text x="46" y="52" text-anchor="middle" font-size="15" ${FONT} fill="${D}">${label}</text>`;
 
+// Телевізор із номером серії на екрані: «1·02», «S2» або 🎬 для фільму
+const screenGlyph = (label) => (D) =>
+  `<path d="M24 13l8 7 8-7" stroke="${W}" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`
+  + `<rect x="8" y="20" width="48" height="32" rx="7" fill="${W}"/>`
+  + `<rect x="13" y="25" width="38" height="22" rx="4" fill="${D}"/>`
+  + `<text x="32" y="${label.length > 3 ? 41 : 42}" text-anchor="middle" font-size="${label.length > 3 ? 13 : 15}" ${FONT} fill="${A}">${label}</text>`;
+
 const levelGlyph = (label) => (D) =>
   `<path d="M32 7l5.5 5 7.3-1 2.2 7 6.7 3.2-1.5 7.2 4.4 5.9-5 5.3.3 7.4-7.2 1.6-3.8 6.3L32 51.2 25.1 55l-3.8-6.3-7.2-1.6.3-7.4-5-5.3 4.4-5.9-1.5-7.2 6.7-3.2 2.2-7 7.3 1z" fill="${W}"/>`
   + `<text x="32" y="38" text-anchor="middle" font-size="19" ${FONT} fill="${D}">${label}</text>`;
@@ -87,7 +95,8 @@ for (const pack of plan) {
   const [light, mid, dark] = PALETTE[pack.type];
   const glyph = GLYPHS[pack.id]
     || (pack.id.startsWith('core-') ? levelGlyph(pack.level) : null)
-    || (pack.type === 'course' ? bookGlyph((pack.id.match(/(\d+)$/) || ['?'])[1]) : null);
+    || (pack.type === 'course' ? bookGlyph((pack.id.match(/(\d+)$/) || ['?'])[1]) : null)
+    || (pack.type === 'screen' ? screenGlyph(pack.label === '🎬' ? '▶' : pack.label) : null);
   if (!glyph) { console.warn(`Немає малюнка для ${pack.id}`); continue; }
   const svgText = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
 <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${light}"/><stop offset="1" stop-color="${mid}"/></linearGradient></defs>

@@ -1,6 +1,7 @@
 // План паків слів для магазину. Зміст генерує scripts/generate-packs.js у packs/<id>.json,
 // іконки лежать у public/packs/<id>.svg.
-// type: topic | profession | situation | language | level | course
+// type: topic | profession | situation | language | level | course | screen
+// Паки серіалів і фільмів (screen) генерує scripts/build-screen-pack.js у scripts/screen-plan.json.
 
 module.exports = [
   // ---------- Теми життя ----------
@@ -73,4 +74,6 @@ module.exports = [
   { id: 'ef4e-int-10', type: 'course', level: 'B1', size: 15, title: 'English File Int · File 10', description: 'Злочини й складені іменники.', focus: 'English File 4th edition Intermediate, File 10: crime, compound nouns' },
 
   { id: 'ielts', type: 'level', level: 'C1', size: 100, title: 'IELTS: академічна лексика', description: 'Слова з Academic Word List для есе й читання на IELTS.', focus: 'IELTS academic vocabulary from the Academic Word List, useful for essays and reading' },
+
+  ...require('./screen-plan.json'),
 ];

@@ -75,15 +75,27 @@ function findTermInSentence(term, sentence) {
   const DETERMINER = /^(a|an|the)$/;
   const anyDeterminer = `(?:a|an|the|my|your|his|her|its|our|their|this|that|these|those)`;
   // Точна форма: неправильні дієслова, закінчення, подвоєна приголосна (stop → stopped, mop → mopping)
-  const exact = (w) => DETERMINER.test(w) ? anyDeterminer : POSSESSIVE.test(w) ? anyPossessive : `(?:${(IRREGULAR[w] || [w]).map(escapeRe).join('|')})(?:${escapeRe(w.slice(-1))}?(?:s|es|ed|d|ing|er|'s|’s))?`;
+  // «put oneself down» ↔ «putting yourself down»
+  const REFLEXIVE = /^(oneself|yourself)$/;
+  const anyReflexive = '(?:myself|yourself|himself|herself|itself|ourselves|yourselves|themselves|oneself)';
+  const exact = (w) => DETERMINER.test(w) ? anyDeterminer : POSSESSIVE.test(w) ? anyPossessive : REFLEXIVE.test(w) ? anyReflexive : `(?:${(IRREGULAR[w] || [w]).map(escapeRe).join('|')})(?:${escapeRe(w.slice(-1))}?(?:s|es|ed|d|ing|er|'s|’s))?`;
   const strategies = [
     exact,
     (w) => (w.length >= 4 ? `${escapeRe(w.replace(/[ey]$/, ''))}${L}{0,4}` : exact(w)),
     (w) => (w.length >= 5 ? `${escapeRe(w.slice(0, -2))}${L}{0,4}` : exact(w)),
   ];
+  // «the ball is in sb's court» ↔ «Ball's in your court»: is/are/will… бувають скорочені, артикль на початку — пропущений
+  const CONTRACTED = { is: 's', are: 're', am: 'm', will: 'll', have: 've', has: 's', would: 'd', had: 'd', not: "n't" };
+  const phrase = (ws, make) => ws.map(make).map((p, i) => {
+    if (!i) return p;
+    const short = CONTRACTED[ws[i]];
+    return short ? `(?:${gap}${p}|['’]${escapeRe(short)})` : `${gap}${p}`;
+  }).join('');
   for (const make of strategies) {
-    const parts = words.map(make);
-    const re = new RegExp(`(?<![\\p{L}\\p{M}])${parts.join(gap)}(?![\\p{L}\\p{M}])`, 'iu');
+    const body = words.length > 1 && DETERMINER.test(words[0])
+      ? `(?:${phrase(words, make)}|${phrase(words.slice(1), make)})`
+      : phrase(words, make);
+    const re = new RegExp(`(?<![\\p{L}\\p{M}])${body}(?![\\p{L}\\p{M}])`, 'iu');
     const m = re.exec(sentence);
     if (m) return { start: m.index, end: m.index + m[0].length };
   }

@@ -11,6 +11,7 @@ const PACK_TYPES = {
   language: ['🧩', 'Мовні явища'],
   level: ['📈', 'Рівні'],
   course: ['📘', 'Підручники'],
+  screen: ['🎬', 'Серіали й фільми'],
 };
 
 const KIND_LABELS = {
@@ -74,7 +75,7 @@ async function viewShop(main, params, alive) {
   setUser({ ...state.user, grains: shop.balance });
 
   const saved = store.get('shop', {});
-  const f = { type: saved.type || 'all', level: saved.level || 'all', size: saved.size || 'all', hideOwned: !!saved.hideOwned, q: '' };
+  const f = { type: saved.type || 'all', level: saved.level || 'all', size: saved.size || 'all', hideOwned: !!saved.hideOwned, q: '', series: params.get('series') || null, season: null };
   const deal = shop.packs.find((p) => p.id === shop.dealId);
 
   const head = h('div', { class: 'page-head' },
@@ -120,13 +121,86 @@ async function viewShop(main, params, alive) {
 
     const q = norm(f.q);
     const shown = shop.packs.filter((p) =>
-      (f.type === 'all' || p.type === f.type)
+      (f.type === 'all' || p.type === f.type || (f.series && p.series === f.series))
       && (f.level === 'all' || p.level === f.level)
-      && (f.size === 'all' || p.size === Number(f.size))
+      && (f.size === 'all' || p.size === Number(f.size) || (f.series && p.series === f.series))
       && (!f.hideOwned || !p.owned)
       && (!q || norm(`${p.title} ${p.description}`).includes(q)));
 
-    grid.replaceChildren(...(shown.length ? shown.map(packCard) : [h('div', { class: 'empty' }, svg(pippoSvg('think')), h('p', { class: 'muted' }, 'Таких паків немає'))]));
+    // Серіал відкрито — сезони й серії; інакше серії згортаються в картку серіалу (крім пошуку)
+    const cards = f.series ? seriesView(shown.filter((p) => p.series === f.series))
+      : q ? shown.map(packCard)
+        : groupSeries(shown).map((x) => (x.series ? seriesCard(x) : packCard(x)));
+    grid.replaceChildren(...(cards.length ? cards : [h('div', { class: 'empty' }, svg(pippoSvg('think')), h('p', { class: 'muted' }, 'Таких паків немає'))]));
+  }
+
+  function groupSeries(list) {
+    const out = [];
+    const bySeries = new Map();
+    for (const p of list) {
+      if (!p.series) { out.push(p); continue; }
+      if (!bySeries.has(p.series)) {
+        const group = { series: p.series, title: p.seriesTitle, packs: [] };
+        bySeries.set(p.series, group);
+        out.push(group);
+      }
+      bySeries.get(p.series).packs.push(p);
+    }
+    return out;
+  }
+
+  const seasonsOf = (list) => [...new Set(list.map((p) => p.season))].sort((a, b) => a - b);
+  const openSeries = (id) => () => { f.series = id; f.season = null; draw(); window.scrollTo({ top: 0, behavior: 'smooth' }); };
+
+  function seriesCover(g, cls) {
+    return h('img', { class: cls, src: `/series/${g.series}.jpg`, alt: '', loading: 'lazy', onerror: (e) => { e.currentTarget.onerror = null; e.currentTarget.src = `/packs/${g.packs[0].id}.svg`; } });
+  }
+
+  function seriesCard(g) {
+    const all = shop.packs.filter((p) => p.series === g.series);
+    const seasons = seasonsOf(all).filter(Boolean);
+    const owned = all.filter((p) => p.owned).length;
+    const words = all.reduce((n, p) => n + p.count, 0);
+    const prices = g.packs.filter((p) => !p.owned && p.price).map((p) => p.price);
+    return h('button', { class: `pack-card series-card${owned === all.length ? ' owned' : ''}`, onclick: openSeries(g.series) },
+      seriesCover(g, 'series-cover'),
+      h('b', { class: 'pack-title' }, g.title),
+      h('div', { class: 'pack-meta' },
+        h('span', { class: 'badge' }, '🎬'),
+        h('span', { class: 'muted small' }, seasons.length
+          ? `${plural(seasons.length, 'сезон', 'сезони', 'сезонів')} · ${plural(all.length, 'серія', 'серії', 'серій')} · ${wordsN(words)}`
+          : wordsN(words))),
+      owned
+        ? h('div', { class: 'pack-owned' }, h('div', { class: 'meter-label small' }, h('span', null, 'Куплено серій'), h('span', { class: 'muted' }, `${owned}/${all.length}`)), progressBar(owned, all.length, 'meter-green'))
+        : prices.length ? h('div', { class: 'price' }, h('span', { class: 'muted small' }, 'серія від'), h('b', null, grainsText(Math.min(...prices)))) : null);
+  }
+
+  function seriesView(list) {
+    const all = shop.packs.filter((p) => p.series === f.series);
+    if (!all.length) { f.series = null; return groupSeries(list).map((x) => (x.series ? seriesCard(x) : packCard(x))); }
+    const g = { series: f.series, title: all[0].seriesTitle, packs: all };
+    const seasons = seasonsOf(all).filter(Boolean);
+    const chip = (active, label, onclick) => h('button', { class: `chip${active ? ' active' : ''}`, onclick }, label);
+    const owned = all.filter((p) => p.owned).length;
+    const head = h('div', { class: 'card series-head' },
+      seriesCover(g, 'series-cover series-cover-lg'),
+      h('div', { class: 'series-head-body' },
+        h('button', { class: 'btn btn-ghost small', onclick: () => { f.series = null; draw(); } }, '← Усі паки'),
+        h('h2', null, g.title),
+        h('p', { class: 'muted small' }, `${seasons.length ? `${plural(seasons.length, 'сезон', 'сезони', 'сезонів')} · ` : ''}${plural(all.length, 'пак', 'паки', 'паків')} · куплено ${owned}. Кожна серія — окремий словник із реченнями з самої серії.`),
+        seasons.length > 1 ? h('div', { class: 'chips' },
+          chip(f.season === null, 'Усі сезони', () => { f.season = null; draw(); }),
+          seasons.map((n) => chip(f.season === n, `Сезон ${n}`, () => { f.season = n; draw(); }))) : null));
+    const eps = list.filter((p) => f.season === null || p.season === f.season)
+      .sort((a, b) => a.season - b.season || a.episode - b.episode);
+    const blocks = [head];
+    for (const n of f.season === null ? seasonsOf(eps) : [f.season]) {
+      const inSeason = eps.filter((p) => p.season === n);
+      if (!inSeason.length) continue;
+      if (n) blocks.push(h('h3', { class: 'series-season' }, `Сезон ${n}`, h('span', { class: 'muted small' }, ` · ${plural(inSeason.length, 'серія', 'серії', 'серій')}`)));
+      blocks.push(...inSeason.map(packCard));
+    }
+    return blocks;
   }
 
   function packCard(p) {
